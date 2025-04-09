@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Showroom</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div id="page1" class="page">
+    <h1>Cars </h1>
+
+    <!-- Table of cars -->
+    <table id="carTable">
+        <thead>
+            <tr>
+              <th>Make</th>
+              <th>Price</th>
+              <th>Year</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+      <tbody id="carList">
+        <!-- Cars on the list from JS -->
+      </tbody>
+    </table>
+
+    <!-- Stats section -->
+    <div id="stats" class="stats-boxes">
+      <div class="stat" id="avgPrice">Average Price: </div>
+      <div class="stat" id="oldestCar">Oldest Car: </div>
+      <div class="stat" id="mostExpensiveCar">Most Expensive Car: </div>
+    </div>
+
+    <!-- Form -->
+    <h2>Add New Car</h2>
+    <form id="carForm">
+      <input type="text" id="make" placeholder="Make" required />
+      <input type="number" id="price" placeholder="Price" required />
+      <input type="number" id="year" placeholder="Year" required />
+      <button type="submit">Add Car</button>
+    </form>
+  </div>
+
+  <!-- Car Details -->
+  <div id="page2" class="page hidden">
+    <button onclick="goBack()">← Back</button>
+    <h2>Car Details</h2>
+    <div id="carDetails">
+      <!-- Car details from JS -->
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
